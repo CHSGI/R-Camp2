@@ -11,12 +11,13 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Layout />} />
-          <Route index element={<Homepage/> } />
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Homepage />} />
+          </Route>
         </Routes>
-      </BrowserRouter> 
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App
